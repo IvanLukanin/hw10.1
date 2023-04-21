@@ -19,22 +19,16 @@ public class Griffindor {
     public static void compareGriffindorStudents(Griffindor student1, Griffindor student2, Griffindor student3) {
         int sumAbilities1 = student1.abilyty();
         int sumAbilities2 = student2.abilyty();
-        int sumAbilities3 = student3.abilyty();
-        if (sumAbilities1 > sumAbilities2 && sumAbilities1 > sumAbilities3) {
+        if (sumAbilities1 > sumAbilities2) {
             System.out.println("Характеристики студента "
                     + student1.getFamily() + " равны "
                     + sumAbilities1 + " и выше чем у студента "
-                    + student2.getFamily() + " и у студента " + student3.getFamily());
-        } else if (sumAbilities1 < sumAbilities2 && sumAbilities1 < sumAbilities3 && sumAbilities2 > sumAbilities3) {
+                    + student2.getFamily());
+        } else if (sumAbilities1 < sumAbilities2 && sumAbilities1 < sumAbilities2) {
             System.out.println("Характеристики студента "
                     + student2.getFamily() + " равны "
                     + sumAbilities2 + " и выше чем у студента "
-                    + student1.getFamily() + " и выше чем у студента " + student3.getFamily());
-        } else {
-            System.out.println("Характеристики студента "
-                    + student3.getFamily() + " равны "
-                    + sumAbilities3 + " и выше чем у студента "
-                    + student1.getFamily() + " и выше чем у студента " + student2.getFamily());
+                    + student1.getFamily());
         }
     }
 
